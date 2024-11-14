@@ -34,13 +34,13 @@ document.addEventListener('DOMContentLoaded', () => {
     var pauseSection = document.querySelector('.pause');
     var pauseButton = document.getElementById('pause');
     var resumeButton = document.querySelector('.pause-btn');
-    var time = 30; // Countdown 
+    var time = 60; // Countdown 
     var timerInterval = null;
 
     // Format time in mm:ss format
     function formatTime(seconds) {
-        var minutes = Math.floor(seconds / 30);
-        var remainingSeconds = seconds % 30;
+        var minutes = Math.floor(seconds / 60);
+        var remainingSeconds = seconds % 60;
         return `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
     }
 
@@ -121,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     function resetGame() {
-        time = 30;
+        time = 60;
         itemsFound = 0;
         mistakes = 0;
         timeDisplay.textContent = formatTime(time);
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
         startTimer();
     }
 
-    // Handle item found logic
+    //  item found logic
     var itemsFoundCount = document.getElementById('items-found-count');
     var wonSection = document.querySelector('.won');
     var itemsFound = 0;
