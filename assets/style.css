@@ -1,0 +1,417 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+  body {
+    display: flex;
+    justify-content: center;    
+    align-items: center;        
+    height: 100vh;              
+    background-color: #f0f0f0;  
+  }
+/* backround  img of index and game  page*/
+  img {
+    max-width: 100%;            
+    max-height: 100%;          
+  }
+/* logo of main page*/
+  .logo {
+    position: absolute;
+    top: 10%;               
+    left: 48.5%;               
+    transform: translate(-50%, -50%); 
+    z-index: 2;               /* Ensures the logo is above the background image */
+  }
+  
+  .logo img {
+    width: 105px;             
+    height: auto;            
+  }
+  div {
+    position: absolute;
+    top: 53%;              
+    left: 50%;            
+    transform: translate(-50%, -50%); /* Correct the offset to truly center */
+    z-index: 3;             /* Make sure buttons are above background */
+  }
+  
+
+
+  /*  button list of main js */
+  ul.button {
+    list-style: none;     
+    padding: 0;
+    margin: 0;
+    display: flex;          
+    flex-direction: column; 
+    align-items: center;    
+    gap: 20px;             
+  }
+  
+  /* Style for individual buttons */
+  .main-button {                
+    padding: 10px 20px;                         
+    font-size: 24px;                            
+    cursor: pointer;    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;                         /* Pointer cursor */
+    border-radius: 5px;                           
+    color: #ffffff;                                 
+    text-align: center;                         
+    width: 220px;                                
+    transition: background-color 0.5s, transform 0.5s;
+  }
+  #play,#home{
+    background-color: #1AADAD;
+    border: 2px solid  #0e6868; 
+  }
+  
+  #how-to-play,#how-to-play2{
+    background-color: #FFD25F;
+    border: 2px solid  #dfb752; 
+  }
+  #options,#restart{
+    background-color: #F74F64;
+    border: 2px solid  #95303c; 
+  }
+  #quit,#pause{
+    background-color: #CC3E34;
+    border: 2px solid  #902b24; 
+  }
+  /*gamepage*/
+  .gamelogo {
+    position: absolute;
+    top: 10%;                 
+    left: 7%;               
+    transform: translate(-50%, -50%); /* Move back by 50% of its width/height to truly center */
+    z-index: 2;            /*layering   Ensures the logo is above the background image */
+  }
+  
+  .gamelogo{
+    width: 140px;            
+    height: auto;            
+  }
+  /*game page button*/
+/* Style for the game buttons container */
+.btn-game {
+    position: absolute;
+    top: 30%;
+    left: 7%;
+}
+
+/* Style for the game buttons container */
+ul.gamebuttons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;   
+    flex-wrap: wrap;       
+    gap: 10px;            
+    width: 130px;         
+}
+
+/* Style for each button */
+.game {
+   
+    border: none;
+    padding: 10px;
+    width: 50px;          
+    height: 50px;          
+    border-radius: 10px;  
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.game img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+/* game counts*/
+.game-element {
+    position: absolute;
+    top: 200%;
+    left: 30%;
+    padding: 20px;                             
+    color: #141414;                                
+    font-size: 20px;                           
+}
+/*--------------------*/
+.game-element ul {
+    list-style: none;                           
+    padding: 0;                                
+    margin: 0;                                 
+}
+.game-element li {
+    margin-bottom: 15px; 
+}
+/* Style for the text span elements */
+.game-element span {
+    font-weight: bold;                         
+    color: #141414;                            
+}
+/*list of element */
+#text{
+    position: absolute;
+    top: -85%;
+    left: 942%;
+    font-weight: bold;  
+    color: black;     
+    width: 165px;            
+}
+/*-------------------------------*/
+.element-to-be-found {
+    position: absolute;
+    top: 160%;
+    left: 940%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 5px;
+  } 
+  .element-to-be-found ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 5px;
+  }
+  .element-to-be-found li {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .element-to-be-found img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+/* invi button*/
+.image-container {
+    position: relative;  
+    width: 100%;        
+    height: 400px;     
+}
+
+/* Button styling */
+.inv-btn button {
+    border: none;
+    background-color:rgba(255, 0, 0, 0);
+    z-index: 3;
+  }
+#inv-pot{
+    position: absolute;
+    top: 190px;
+    left: 127px;
+    width: 35px;
+    height: 20px;
+    border-radius: 50%; 
+}
+#inv-chicha{
+    position: absolute;
+    top: 280px;
+    left: 175px;
+
+    width: 74px;
+    height: 80px;
+    border-radius: 50%; 
+}
+#inv-earing{
+    position: absolute;
+    top: 84px;
+    left: 594px;
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+}
+#inv-flower{
+    position: absolute;
+    top: 3px;
+    left: 890px;
+
+    width: 70px;
+    height: 140px;
+    border-radius: 50%; 
+}
+#inv-glasses{
+    position: absolute;
+    top: 66px;
+    left: 762px;
+
+    width: 30px;
+    height: 20px;
+    border-radius: 50%; 
+}
+#inv-hat{
+    position: absolute;
+    top: -144px;
+    left: 114px;
+
+    width: 30px;
+    height: 20px;
+    border-radius: 50%; 
+}
+#inv-necklace{
+    position: absolute;
+    top: 5px;
+    left: 107px;
+
+    width: 30px;
+    height: 35px;
+    border-radius: 50%; 
+}
+#inv-orange-carpet{
+    position: absolute;
+    top: 110px;
+    left: 956px;
+
+    width: 124px;
+    height: 60px;
+    border-radius: 50%; 
+}
+#inv-shoes1{
+    position: absolute;
+    top: 284px;
+    left: 538px;
+
+    width: 48px;
+    height: 40px;
+    border-radius: 50%; 
+}
+#inv-shoes2{
+    position: absolute;
+    top: 276px;
+    left: 628px;
+
+    width: 48px;
+    height: 48px;
+    border-radius: 50%; 
+}
+#inv-tea-cup{
+    position: absolute;
+    top: 246px;
+    left: 145px;
+    width: 30px;
+    height: 20px;
+    border-radius: 50%; 
+}
+/*---------------how to play main page */
+
+.how-to-play-img {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .how-to-play-img img {
+    width: 30%; 
+  }
+  
+  .how-to-play-text {
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .how-to-play-title {
+    font-size: 30px;
+    margin-bottom: 10px;
+   
+  }
+  .how-to-play-p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 200px;
+  }
+  
+  .close {
+    background-color: #CC3E34;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+   
+  }
+  
+  /*------how to play game page*/
+  .how-to-play-img2 {
+    position: fixed;
+    top: 150%;
+    left: 500%;
+    width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
+  
+}
+
+.how-to-play-img2 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; 
+}
+.close2 {
+    background-color: #CC3E34;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+   
+  }
+
+  .time-over , .five-incorrect , .pause, .won{
+    position: fixed;
+    top: 150%;
+    left: 500%;
+    width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
+  
+}
+
+.time-over img ,.five-incorrect img ,.pause img ,.won img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; 
+}
+
+.replay, .replay2,.pause-btn,.home-btn{
+    background-color: #CC3E34;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+   
+  }
+
+
+.hidden {
+    display: none;
+  }
+
+  
+ 

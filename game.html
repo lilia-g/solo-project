@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="images/1x/falcone.png" rel="icon">
+    <title>Lawej</title>
+   
+    
+</head>
+<body>
+    <img src="images/1x/gamepic.png" alt="homepage" class="backround-img">
+    <div class="gamelogo">
+        <a href="index.html"><img src="images/1x/main logo.png" alt="home-page-logo"></a>
+        </div>
+        
+<div class="btn-game" >
+    <ul class="gamebuttons">
+       <li><a href="index.html"><button id="home" class="game"><img src="images/1x/home.png" alt="return to home"></button></a></li>
+       <li><button id="restart" class="game"> <img src="images/1x/restart.png" alt=""></button></li>
+       <li><button id="pause" class="game"> <img src="images/1x/pouse.png" alt="pause"></button></li>
+       <li><button id="how-to-play2" class="game"> <img src="images/1x/how to play.png" alt="how to play"></button></li>
+    </ul>
+    
+<div class="game-element" >
+    <ul>
+        <li class="Time"> Time: <span id="time-display">0:00</li>
+        <li class="items-found">   Items Found: <span id="items-found-count">0</span>/10</li>
+        <li class="mistakes"> Mistakes: <span id="mistakes-count">0</span></li>
+    </ul>
+</div>
+
+<div id="text">
+    <h3>list of element that you have to find :</h3>
+</div>
+<div class="element-to-be-found">
+    <ul>
+<li class="to-be-found" id="pot"> <img src="images/1x/pot.png" alt=""></li>
+<li class="to-be-found" id="chicha"> <img src="images/1x/chicha.png" alt=""></li>
+<li class="to-be-found" id="earing"> <img src="images/1x/earing.png" alt=""></li>
+
+<li class="to-be-found" id="flower"> <img src="images/1x/flower patring.png" alt=""></li>
+<li class="to-be-found" id="glasses"> <img src="images/1x/glasses.png" alt=""></li>
+<li class="to-be-found" id="hat"> <img src="images/1x/hat.png" alt=""></li>
+
+<li class="to-be-found" id="necklace"> <img src="images/1x/nicklase.png" alt=""></li>
+<li class="to-be-found" id="orange-carpet"> <img src="images/1x/orange-carpet.png" alt=""></li>
+<li class="to-be-found" id="shoes"> <img src="images/1x/shoes.png" alt=""></li>
+
+<li class="to-be-found" id="tea-cup"> <img src="images/1x/tea cup.png" alt=""></li>
+    </ul>
+</div>
+
+<div class="inv-btn">
+<button id="inv-pot"></button>
+<button id="inv-chicha"></button>
+<button id="inv-earing"></button>
+
+<button id="inv-flower"></button>
+<button id="inv-glasses"></button>
+
+<button id="inv-hat"></button>
+<button id="inv-necklace"></button>
+<button id="inv-orange-carpet"></button>
+
+<button id="inv-shoes1"></button>
+<button id="inv-shoes2"></button>
+
+<button id="inv-tea-cup"></button>
+</div>
+<div class="how-to-play-img2 hidden">
+    <img src="images/1x/windo.png" alt="">
+    <div class="how-to-play-text">
+      <h2 class="how-to-play-title">how to play</h2>
+      <p class="how-to-play-p">
+        To play, you must locate all 10 hidden elements <br>
+        before the timer runs out you only have 60sec . <br>
+        Be cautious, as five incorrect attempts <br>
+        will result in a game over.
+      </p>
+      <button class="close2">close</button>
+    </div>
+  </div>
+  <div class="time-over hidden ">
+    <img src="images/1x/windo.png" alt="">
+    <div class="how-to-play-text">
+      <h2 class="how-to-play-title">  time  over</h2>
+      <p class="how-to-play-p">
+        your time is over ,<br>try again
+      </p>
+      <button class="replay">replay</button>
+    </div>
+  </div>
+  <div class="five-incorrect hidden ">
+    <img src="images/1x/windo.png" alt="">
+    <div class="how-to-play-text">
+      <h2 class="how-to-play-title">  you lose</h2>
+      <p class="how-to-play-p">
+       you made 5 Mistakes ,<br>try again
+      </p>
+      <button class="replay2">replay</button>
+    </div>
+  </div>
+  
+  <div class="pause hidden ">
+    <img src="images/1x/windo.png" alt="">
+    <div class="how-to-play-text">
+      <h2 class="how-to-play-title">  you lose</h2>
+      <p class="how-to-play-p">
+       game stopped<br>
+      </p>
+      <button class="pause-btn">reture to game</button>
+    </div>
+  </div>
+
+
+  <div class=" won hidden">
+    <img src="images/1x/windo.png" alt="">
+    <div class="how-to-play-text">
+      <h2 class="how-to-play-title">  you won</h2>
+      <p class="how-to-play-p">
+        congratulations you won<br>10/10
+      </p>
+      <button class="home-btn"><a href="index.html">reture to main menu </a></button>
+    </div>
+  </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+    <script src="assets/main.js"></script>
+</body>
+</html>
